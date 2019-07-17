@@ -13,7 +13,7 @@ Buzzer::Buzzer(byte pin)
 
 void Buzzer::play()
 {
-    for (int note = 0; note < 51; note++)
+    for (int note = 0; note < 3; note++)
     {
         int noteDuration = noteDurations[note] * 95;
         tone(_pin, melody[note], noteDuration);
